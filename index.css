@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    color: red;
 }
 .image{
     display: block;
@@ -10,31 +11,34 @@ h1{
 p{
     text-align: center;
     font-size: 20px;
+    color: red;
 }
 
 #Submit{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
-    height: 100px;
+    width: 275px;
+    height: 175px;
     font-size: 30px;
-    background-color: lightgrey;
+    background-color: lightblue;
+    color: red;
 }
 
 #Submit2{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
-    height: 100px;
+    width: 275px;
+    height: 175px;
     font-size: 30px;
-    background-color: lightgrey;
+    background-color: lightblue;
+    color: red;
 }
 
 
 body{
-    background-color: lightblue;
+    background-color: black;
 }
 
 
@@ -49,6 +53,8 @@ body{
     text-align: center;
     width: 150px;
     height: 75px;
+    background-color: lightblue;
+    color: red;
 }
 
 #buttons{
@@ -58,6 +64,7 @@ body{
     padding: 50px;
     justify-content: center;
     align-items: center;
+
 }
       
 
@@ -67,10 +74,34 @@ body{
     margin: 10px;
     padding: 10px;
     justify-content: center;
+    color: red;
 
 }
 
 
 #paragraph1{
     margin-right: 10px;
+    color: red;
+}
+
+
+#img1{
+    display: block;
+    width: 750px;
+    height: 500px;
+}
+
+#img2{
+    width: 750px;
+    height: 500px; 
+}
+
+#photos{
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+
 }
