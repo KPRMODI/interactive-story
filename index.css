@@ -15,9 +15,49 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 150px;
+    height: 100px;
 }
 
 #Submit2{
-
+    display: block;
+    margin-left: auto;
     margin-right: auto;
+    width: 150px;
+    height: 100px;
+}
+
+
+
+
+#text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 1px solid;
+    justify-items: auto;
+    justify-content: auto;
+    align-items: flex-end;
+    text-align: center;
+    width: 150px;
+    height: 75px;
+}
+
+#buttons{
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+      
+
+#p{
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }

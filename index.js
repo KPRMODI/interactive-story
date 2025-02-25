@@ -6,6 +6,9 @@ Submit2.onclick = function(){
     document.getElementById("img").src="zombieapoc1.jpg"
 }
 
-restart1.onclick = function(){
-    
+
+text.onclick = function(){
+    location.href = "index.html"
 }
+
+     
