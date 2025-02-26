@@ -17,8 +17,6 @@ p{
     color: red;
 }
 
-
-
 button{
     display: block;
     margin-left: auto;
@@ -29,15 +27,11 @@ button{
     background-color: lightblue;
     color: red;
     border-radius: 15px;
-
 }
-
-
 
 body{
     background-color: black;
 }
-
 
 #text{
     display: block;
@@ -64,7 +58,6 @@ body{
 
 }
       
-
 #p{
     display: flex;
     list-style-type: none;
@@ -72,15 +65,12 @@ body{
     padding: 10px;
     justify-content: center;
     color: red;
-
 }
-
 
 #paragraph1{
     margin-right: 10px;
     color: red;
 }
-
 
 #img1{
     display: block;
