@@ -13,12 +13,12 @@ Submit.onclick = function(){
 
     document.getElementById("Submit2").textContent = "Continue Running away"
     Submit.onclick = function(){
+        endingfunc()
         document.getElementById("paragraph1").textContent = "Zombie Crown Ending!"
-        elem.parentNode.removeChild(elem);
-        elem2.parentNode.removeChild(elem2);
-        elem3.parentNode.removeChild(elem3)
-        img1.parentNode.removeChild(img1)
-        img2.parentNode.removeChild(img2)
+        document.getElementById("img").src = "zombieking.webp"
+    }
+    Submit2.onclick = function(){
+        document.getElementById("paragraph1").textContent = "Fortnite ending"
     }
 }
 
@@ -31,4 +31,22 @@ text.onclick = function(){
     location.href = "index.html"
 }
 
-    
+
+function endingfunc(){
+    elem.parentNode.removeChild(elem);
+    elem2.parentNode.removeChild(elem2);
+    elem3.parentNode.removeChild(elem3);
+    img1.parentNode.removeChild(img1);
+    img2.parentNode.removeChild(img2);
+}
+
+
+
+
+document.getElementById("Submit").addEventListener("mousemove", cursor)
+document.getElementById("Submit2").addEventListener("mousemove", cursor)
+
+function cursor(){
+    document.getElementById("Submit").style.cursor = "pointer";
+    document.getElementById("Submit2").style.cursor = "pointer";
+}
