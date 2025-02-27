@@ -5,6 +5,10 @@ var elem3 = document.getElementById("options")
 var elem4 = document.getElementById("img1")
 var elem5 = document.getElementById("img2")
 
+let nukecodeteller = false
+let nukecode = "23713";
+var nukesound = new Audio('nukesound.mp3');
+
 Submit.onclick = function(){
     document.getElementById("img").src="zombiechase.webp"
     document.getElementById("paragraph1").textContent = "You choose to run away, however the zombies are now chasing you! What are you going to do?"
@@ -18,6 +22,7 @@ Submit.onclick = function(){
         document.getElementById("paragraph1").textContent = "Surprisingly, this somehow works out? The zombies have actually started to worship you as a king of sorts due to your unique running skill and intelligence. You are NOW the zombie king. Was this a bad day after all?"
         document.getElementById("img").src = "zombieking.webp"
         document.getElementById("title").textContent = "The Zombie King Ending"
+
     }
     Submit2.onclick = function(){
         document.getElementById("Submit").textContent = "Attempt to Fight the Zombies"
@@ -28,7 +33,7 @@ Submit.onclick = function(){
         Submit.onclick = function(){
             endingfunc()
             document.getElementById("img").src = "humanlose.webp"
-            document.getElementById("title").textContent = "Lost 1 Ending"
+            document.getElementById("title").textContent = "Bad Ending"
             document.getElementById("paragraph1").textContent = "What did you expect was going to happen? A sudden realization occurs of what a stupid idea it was to fight dozens of zombies chasing you. You've lost, and there's nothing you can do now."
         }
         Submit2.onclick = function(){
@@ -54,16 +59,62 @@ Submit2.onclick = function(){
         document.getElementById("Submit").textContent = "Go Back in the School"
         document.getElementById("Submit2").textContent = "Play Dead"
         document.getElementById("paragraph1").textContent = "You decided to go outside and explore outside of the school. Oh no! Zombies are outside waiting for you. You have to act quick to save yourself!"
-        document.getElementById("img1").src = "zombiefight.webp"
-        document.getElementById("img2").src = "zombiepeace.webp"
+        document.getElementById("img1").src = "enterbuildingagain.jpeg"
+        document.getElementById("img2").src = "playdead.jpeg"
+        Submit.onclick = function(){
+            endingfunc()
+            document.getElementById("img").src = "militaryending.jpeg"
+             document.getElementById("title").textContent = "Saved Ending"
+            document.getElementById("paragraph1").textContent = "You enter back into the school and hide from the zombies. You wait for hours and hours until the military arrives. You are now saved, congratulations!"
+        }
+        Submit2.onclick = function(){
+            endingfunc()
+            document.getElementById("img").src = "zombieslaughing.webp"
+             document.getElementById("title").textContent = "Humiliation Ending"
+            document.getElementById("paragraph1").textContent = "Total Humiliation. Just when you thought you were getting eaten, the zombies start hysterically laughing at you. They caught onto your game. It seems they have high intelligence, and instead of being physically damaged, you are now mentally traumatized due to the emotional bullying of the zombies. Who knew they could cause something like this to humans?"
+        }
     }
+    Submit2.onclick = function(){
+        document.getElementById("img").src = "nuclearbutton.jpeg"
+        document.getElementById("Submit").textContent = "Do Nothing"
+        document.getElementById("Submit2").textContent = "Launch Nuke To Save Humanity"
+        document.getElementById("paragraph1").textContent = "While walking around you enter a strange room. You see a large red button with a code next to it which reads 23713. You wonder what this is even doing here, but then realize your school was actually crazy and had several problems. Should I enter the code?"
+        document.getElementById("img1").src = "donothing.webp"
+        document.getElementById("img2").src = "manpressnuke.webp"
+
+        Submit.onclick = function(){
+            endingfunc()
+            document.getElementById("img").src="shizophrenia.jpeg"
+            document.getElementById("paragraph1").textContent="You decided to quite literally do nothing and just sit still. The nuclear button is still in the school, yet you haven't touched it. Eventually, the military comes and saves you, however by the time they arrived you got extremely paranoid and ended up developing schizophrenia. You now see things at random times and regret doing nothing with your life. Maybe you should have done something to have avoided this fat"
+        }
+        Submit2.onclick = function(){
+            endingfunc()
+            while (nukecodeteller != true){
+                userGuess = (prompt("Enter The nuclear code: "));
+                if (userGuess == nukecode){
+                    nukecodeteller = true
+                }
+            document.getElementById("paragraph1").textContent="Now press the button (press down a key)"
+            document.addEventListener("keypress",  function keydown1(){
+                nukesound.play()
+                document.getElementById("title").textContent="Sacrificial Nuke Ending"
+                document.getElementById("img").src="nuke.gif"
+                document.getElementById("paragraph1").textContent = "You launch a nuke to kill all of the zombies, but in the process sacrifice yourself as well. Unknown to you, you wiped out all of the zombies due to the outbreak only being in your relative area. Many call you a hero while some oppose the use of nuclear weapons on school grounds. Speaking of nuclear weapons, why was a nuclear button in a school?"
+            })
+            }
+        }
+    }
+    // var nukesound = Audio('nukesound.mp3');
 }
+
+
+
+
 
 
 text.onclick = function(){
     location.href = "index.html"
 }
-
 
 function endingfunc(){
     let elements = [elem, elem2, elem3, elem4, elem5];
@@ -72,13 +123,6 @@ function endingfunc(){
             elements[i].parentNode.removeChild(elements[i]);
     }
 }
-
-// elem.parentNode.removeChild(elem);
-// elem2.parentNode.removeChild(elem2);
-// elem3.parentNode.removeChild(elem3);
-// img1.parentNode.removeChild(img1);
-// img2.parentNode.removeChild(img2);
-
 
 document.getElementById("Submit").addEventListener("mousemove", cursor)
 document.getElementById("Submit2").addEventListener("mousemove", cursor)
