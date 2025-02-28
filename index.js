@@ -89,7 +89,7 @@ try{ // try block for error handling
                 endingfunc()
                 document.getElementById("title").textContent = "Schizophrenic Ending! You are now insane!"
                 document.getElementById("img").src="shizophrenia.jpeg"
-                document.getElementById("paragraph1").textContent="You decided to quite literally do nothing and just sit still. The nuclear button is still in the school, yet you haven't touched it. Eventually, the military comes and saves you, however by the time they arrived you got extremely paranoid and ended up developing schizophrenia. You now see things at random times and regret doing nothing with your life. Maybe you should have done something to have avoided this fat"
+                document.getElementById("paragraph1").textContent="You decided to quite literally do nothing and just sit still. The nuclear button is still in the school, yet you haven't touched it. Eventually, the military comes and saves you, however by the time they arrived you got extremely paranoid and ended up developing schizophrenia. You now see things at random times and regret doing nothing with your life. Maybe you should have done something to have avoided this fate"
             }
             Submit2.onclick = function(){ // nuke ending
                 endingfunc()
